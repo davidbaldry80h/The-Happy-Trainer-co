@@ -149,6 +149,24 @@ a{
     #shop {
         grid-template-columns: repeat(1,223px);
     }
+    @media (max-width: 500px) {
+    #shop {
+        grid-template-columns: repeat(1,223px);
+    }
+    .header-text {
+        font-size: 1.5em;
+        font-family: 'Rubik Doodle Shadow', system-ui;
+        line-height: 25px;
+        padding-top: 25px;
+        justify-self: center;
+        font-size: 20px;
+        }
+        .mag{
+            justify-self: end;
+            color: black;
+            text-decoration: none;
+            font-size: 10px;
+        }
 }
 
 
