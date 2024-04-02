@@ -1,0 +1,268 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 80%;
+    margin: 0 auto;
+}
+img , i, .X{
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+    /* font-family: 'Rubik Doodle Shadow', system-ui; */
+}
+
+.container {
+    margin: auto;
+    align-items: center;
+}
+
+    /* START HEADER SECTION */
+.header {
+    display: grid;
+    grid-template-columns:20% 1fr 20%;
+    margin-bottom: 2em;
+    min-height: 10vh;
+    align-items: center;
+    justify-content: center;
+
+}
+.header-text {
+    font-size: 2.5em;
+    font-family: 'Rubik Doodle Shadow', system-ui;
+    line-height: 35px;
+    padding-top: 5px;
+    justify-self: center;
+    }
+    
+.mag{
+    justify-self: end;
+    color: black;
+    text-decoration: none;
+}
+/* .mag img {
+    width: 30px;
+    height: 30px;
+    
+    
+    
+} */
+.basket img {
+    
+    width: 30px;
+    height: 30px;
+    margin: 0;
+    
+}
+.basket{
+    position: relative;
+    padding: .5em;
+    border-radius: 10px;
+    justify-self: end;
+
+}
+.cartAmount{
+    position: absolute;
+    background-color:   red;
+    color: white;
+    padding: 1px;
+    border-radius: 4px;
+    top: -5px;
+    right: 2px;
+    font-size: 17px;
+    font-weight: bold;
+    margin: 0 auto;
+}
+
+.basketAmmount{
+    margin: 0;
+}
+
+/* END HEADER SECTION */
+/* START MAIN SECTION */
+
+.shop {
+    display: grid;
+    grid-template-columns: repeat(4, 223px);
+    gap: 1em;
+    /* justify-content: space-between; */
+    justify-content: center;
+
+}
+
+.item img{
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+}
+.details{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+}
+.price-quantity{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 1em;
+}
+.buttons{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    font-size: 20px;
+}
+
+
+.plus{
+    color: green;
+    font-weight: 900;
+    font-size: 20px;
+    margin: 0;
+}
+.dash{
+    color: red;
+    font-weight: 900;
+    font-size: 30px;
+    padding-bottom: 7px;
+    
+}
+
+
+/* END MAIN SECTION */
+
+
+/**
+* ! style rules for label and some buttons
+**/
+
+.text-center{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.HomeBtn, .checkout,
+.removeAll{
+    background-color: #212529;
+    color: white;
+    border: none;
+    padding: 6px;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 10px;
+    
+}
+.checkout{
+    background-color: green;
+}
+.removeAll{
+    background-color:red;
+}
+
+.X {
+    color: red;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/**
+* ! style rules for shopping-cart
+**/
+
+.shopping-cart{
+    display: grid;
+    grid-template-columns: repeat(1,320px);
+    justify-content: center;
+    gap: 30px;
+}
+
+
+/**
+* ! style rules for cert-item
+**/
+
+.cart-item{
+    border: 2px solid black;
+    border-radius: 5px;
+    display: flex;
+}
+.title-price-x{
+    width: 195px;
+    display: flex;
+    align-items: center;
+    /* border: 1px solid red; */
+    justify-content: space-between;
+    
+}
+.title-price{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.cart-item-price {
+    background-color: darkgrey;
+    color: white;
+    border-radius: 4px;
+    padding: 3px 6px;
+}
+
+@media (max-width: 1100px) {
+    #shop {
+        grid-template-columns: repeat(2,223px);
+    }
+}
+@media (max-width: 500px) {
+    #shop {
+        grid-template-columns: repeat(1,223px);
+    }
+    .container {
+        margin: auto;
+        align-items: center;
+    }
+    
+    .header-text {
+        font-size: 1.5em;
+        font-family: 'Rubik Doodle Shadow', system-ui;
+        line-height: 25px;
+        padding-top: 25px;
+        justify-self: center;
+        font-size: 20px;
+        }
+        .mag{
+            justify-self: end;
+            color: black;
+            text-decoration: none;
+            font-size: 10px;
+        }
+        .item img{
+            width: 100%;
+            max-height: 75%;
+            object-fit: cover;
+        }
+        .details{
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+            gap: 10px;
+        }
+        .price-quantity{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 1em;
+        }
+
+    
+}
+
+
+
+
+
+
+
+
