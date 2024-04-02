@@ -16,7 +16,7 @@ let generateShop = () => {
                 <h3>${name}</h3>
                 <p>${desc}</p>
                 <div class="price-quantity">
-                    <h2>$ ${price}</h2>
+                    <h2>£ ${price}</h2>
                     <div class="buttons">
                         <i onclick="increment(${id})" class="plus">+</i>
                         <div id=${id} class="quantity">
